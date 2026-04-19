@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vodicí pes: Není to mazlíček. A už vůbec není pro vás. | Vidím to jinak</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    :root {
+      --bg-dark: #020617;
+      --accent-blue: #3b82f6;
+    }
+
+    body {
+      background-color: var(--bg-dark);
+      background-image: radial-gradient(at 50% 0%, rgba(30, 58, 138, 0.2) 0px, transparent 50%);
+      min-height: 100vh;
+    }
+
+    /* Progress bar nahoře */
+    #progress-bar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 3px;
+      background: linear-gradient(to right, var(--accent-blue), #60a5fa);
+      width: 0%;
+      z-index: 100;
+      transition: width 0.1s;
+    }
+
+    /* Typografie a odstavce */
+    .prose-custom p {
+      margin-bottom: 1.5rem;
+      line-height: 1.8;
+      color: #cbd5e1; /* slate-300 */
+    }
+
+    /* První odstavec - "perex" */
+    .prose-custom p:first-of-type {
+      font-size: 1.25rem;
+      font-weight: 500;
+      color: #f1f5f9; /* slate-100 */
+      line-height: 1.6;
+      border-left: 4px solid var(--accent-blue);
+      padding-left: 1.5rem;
+      margin-bottom: 2.5rem;
+    }
+
+    /* Nadpisy v článku */
+    .prose-custom h2, .prose-custom h3 {
+      color: #f1f5f9;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      margin-top: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    .prose-custom h2 { font-size: 1.875rem; }
+    .prose-custom h3 { font-size: 1.5rem; }
+
+    /* Zvýraznění (tučný text) */
+    .prose-custom strong {
+      color: #f8fafc;
+      font-weight: 700;
+    }
+
+    /* TL;DR Box (Shrnutí) */
+    .tldr-box {
+      background: rgba(30, 41, 59, 0.5);
+      border: 1px solid rgba(59, 130, 246, 0.3);
+      border-radius: 1rem;
+      padding: 1.5rem;
+      margin-bottom: 2.5rem;
+    }
+
+    /* Citace (ty nekorektní hlášky) */
+    blockquote {
+      font-style: italic;
+      font-size: 1.2rem;
+      border-left: 4px solid #ef4444; /* Červená pro důraz */
+      background: rgba(239, 68, 68, 0.05);
+      padding: 1.5rem;
+      margin: 2rem 0;
+      color: #fca5a5;
+    }
+
+    /* Odrážky */
+    .prose-custom ul {
+      margin-bottom: 1.5rem;
+      list-style-type: none;
+    }
+
+    .prose-custom li {
+      margin-bottom: 0.5rem;
+      padding-left: 1.5rem;
+      position: relative;
+    }
+  </style>
+</head>
+
+<body class="font-sans antialiased text-slate-100 text-lg">
+
+  <div id="progress-bar"></div>
+
+  <header class="w-full border-b border-slate-800/60 bg-slate-950/70 backdrop-blur sticky top-0 z-50">
+    <div class="max-w-4xl mx-auto px-4 py-3 flex items-center justify-between">
+      <a href="../index.html" class="group flex items-center gap-2 text-slate-400 hover:text-white transition-colors">
+        <span class="text-xl group-hover:-translate-x-1 transition-transform">←</span>
+        <span class="text-sm font-bold uppercase tracking-widest">Všechny články</span>
+      </a>
+      <span class="text-[10px] text-slate-500 uppercase tracking-[0.3em] font-black">Vidím to jinak</span>
+    </div>
+  </header>
+
+  <main class="max-w-3xl mx-auto px-4 pb-20 pt-12">
+
+    <header class="mb-12">
+      <h1 class="text-4xl sm:text-5xl font-black mb-4 leading-tight tracking-tighter">
+        Vodicí pes: Není to mazlíček. A už vůbec není pro vás.
+      </h1>
+      <div class="flex items-center gap-4 text-xs text-slate-500 uppercase tracking-widest font-bold">
+        <span>Publikováno: <time>19. 04. 2026</time></span>
+        <span class="w-1 h-1 bg-slate-700 rounded-full"></span>
+        <span>Čtení na 5 minut</span>
+      </div>
+    </header>
+
+    <div class="tldr-box">
+      <h4 class="text-blue-400 font-black text-xs uppercase tracking-[0.2em] mb-3">Shrnutí pro lidi v presu</h4>
+      <p class="text-slate-300 text-sm leading-relaxed italic">
+        Vodicí pes není atrakce ani dekorace na ulici. Je to pracovní nástroj a oči svého majitele. Když ho rozptýlíte, riskujete, že jeho majitel skončí pod autem nebo na zemi.
+      </p>
+    </div>
+
+    <article id="article-content" class="prose-custom max-w-none">
+      <p> Vodicí pes: Není to mazlíček. A už vůbec není pro vás.</p>
+<p> 👀 Vodicí pes není atrakce ani dekorace na ulici. Je to pracovní nástroj a oči svého majitele. Když ho rozptýlíte, riskujete, že jeho majitel skončí pod autem nebo na zemi.</p>
+<p> Chyba lávky – vodicí pes není „jen pes“ a už vůbec tu není pro vaše potěšení. Je to parťák a nástroj, který zajišťuje bezpečnou cestu tam, kde oči selhávají.</p>
+<p> "Pes nerozhoduje za člověka. Pes neví, kam se jde a není to autopilot. Člověk určuje směr, pes zajišťuje bezpečí."</p>
+<h2>⚙️ Jak to funguje v reálu</h2>
+<p> Nevidomý jde po chodníku. Pes se najednou zastaví. Znamená to, že je před ním překážka – auto, výkop nebo schody. Přijde povel „vyveď“, pes bezpečně obejde problém a pokračuje se dál. Je to systém, který funguje, dokud do něj nevstoupí lidský faktor.</p>
+<h2>❌ Největší průšvih: Lidi, co to „myslí dobře“</h2>
+<p> Největší problém nejsou díry v chodníku, ale lidi, kteří mají potřebu se se psem „skamarádit“, když pracuje.</p>
+<div class='flex gap-3 mb-4 items-start'><span class='shrink-0'>👉</span><span>Nehladit! Vím, že je roztomilý, ale rozptyluješ ho a ohrožuješ nás oba.</span></div>
+<div class='flex gap-3 mb-4 items-start'><span class='shrink-0'>👉</span><span>Nemluvit! On má řešit svého člověka, ne tvoje „ťuťu muťu“.</span></div>
+<div class='flex gap-3 mb-4 items-start'><span class='shrink-0'>👉</span><span>Nekrmit! Ani „jen malinký kousek“. Cizí jídlo je pro pracujícího psa obrovský problém.</span></div>
+<div class='flex gap-3 mb-4 items-start'><span class='shrink-0'>👉</span><span>Nechytat! Nikdy nesahejte na postroj, na psa ani na majitele bez ptaní.</span></div>
+<h3>⚠️ Realita, ze které mrazí</h3>
+<p> "Představte si zledovatělý chodník. Pes mě vede bezpečnější cestou. Najednou ho někdo začne hladit a mlaskat na něj. Pes ztratí koncentraci, my oba skončíme na zemi a ten dobrák, co si chtěl pohladit pejska, si myslí, že se nic nestalo."</p>
+<h2>🧠 Co většina lidí nechápe</h2>
+<p> Pes není navigace ani robot. Neví, kdy je na semaforu zelená a nečte jízdní řády. To všechno hlídá člověk. Pes je tu od toho, aby nás neporazilo auto nebo jsme nespadli do díry.</p>
+<p> "Pokud vodicího psa rozptýlíte, je to stejné, jako byste řidiči autobusu za jízdy zakryli oči."</p>
+<h2>⚖️ Zákon mluví jasně</h2>
+<p> Vodicí pes má právo jít do restaurace, obchodu, MHD i do nemocnice. Není to žádná „laskavost“ provozovatele, je to zákon.</p>
+<p> "Pokud někoho se psem vyhodíš, jsi v problému ty. Ne on."</p>
+<h2>🎯 Závěr: Respekt stačí</h2>
+<p> Když ten pes pracuje (má na sobě postroj), neexistuje pro vás. Nechte ho být. Tím nám pomůžete nejvíc.</p>
+<div class='flex gap-3 mb-4 items-start'><span class='shrink-0'>✅</span><span>Nehladit bez dovolení</span></div>
+<div class='flex gap-3 mb-4 items-start'><span class='shrink-0'>✅</span><span>Nemluvit na psa při práci</span></div>
+<div class='flex gap-3 mb-4 items-start'><span class='shrink-0'>✅</span><span>Nekrmit</span></div>
+<div class='flex gap-3 mb-4 items-start'><span class='shrink-0'>✅</span><span>Nezasahovat do vedení</span></div>
+<p> Dočetl jsi až sem? Super. Tak až příště uvidíš labradora v postroji, ovládni své pudy a prostě nás nechej projít. Hlavně se prosím nauč přemýšlet. Když uvidíš psa v postroji jak někoho vede, tak na něj nereaguj. Z ní to logicky. Že? Já mám ale pocit, že u spousty zdravích lidí to logické uvažování značně pokulhává.</p>
+
+    </article>
+
+    <footer class="mt-16 pt-8 border-t border-slate-800">
+      <div class="bg-blue-600/10 border border-blue-500/20 rounded-2xl p-6 text-center">
+        <p class="text-blue-300 font-bold mb-2 text-sm uppercase tracking-widest">Líbilo se ti to?</p>
+        <p class="text-slate-400 text-sm mb-4 italic">Vodící a asistenční psy tu nejsou pro vaše potěšení. Zkuste to prosím pochopit.</p>
+        <a href="../index.html" class="inline-block bg-blue-600 hover:bg-blue-500 text-white font-bold py-2 px-6 rounded-full text-sm transition-all">
+          Zpět na hlavní stránku
+        </a>
+      </div>
+    </footer>
+
+  </main>
+
+  <script>
+    // Skript pro progress bar
+    window.onscroll = function() {
+      let winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+      let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      let scrolled = (winScroll / height) * 100;
+      document.getElementById("progress-bar").style.width = scrolled + "%";
+    };
+  </script>
+
+</body>
+</html>

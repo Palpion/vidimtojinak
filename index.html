@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vidím to jinak | Realita bez filtru</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    :root {
+      --bg-dark: #020617;
+      --card-bg: #0f172a;
+      --accent-blue: #3b82f6;
+    }
+
+    body {
+      background-color: var(--bg-dark);
+      background-image: 
+        radial-gradient(at 0% 0%, rgba(37, 99, 235, 0.15) 0px, transparent 50%),
+        radial-gradient(at 100% 0%, rgba(29, 78, 216, 0.1) 0px, transparent 50%);
+      min-height: 100vh;
+    }
+
+    .card-hover {
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      border: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    .card-hover:hover {
+      transform: translateY(-5px);
+      border-color: var(--accent-blue);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+      background-color: #1e293b;
+    }
+
+    .warning-pulse {
+      animation: pulse-border 2.5s infinite;
+    }
+
+    @keyframes pulse-border {
+      0% { border-color: rgba(239, 68, 68, 0.3); box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.2); }
+      50% { border-color: rgba(239, 68, 68, 0.8); box-shadow: 0 0 15px 0 rgba(239, 68, 68, 0.4); }
+      100% { border-color: rgba(239, 68, 68, 0.3); box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.2); }
+    }
+
+    .text-glow {
+      text-shadow: 0 0 30px rgba(59, 130, 246, 0.4);
+    }
+  </style>
+</head>
+
+<body class="font-sans antialiased text-slate-100">
+
+  <header class="w-full border-b border-slate-800/60 bg-slate-950/60 backdrop-blur-md sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
+        <span class="text-blue-500 font-black tracking-tighter text-xl">VIDÍM TO JINAK</span>
+        <span class="px-3 py-1 rounded-full bg-blue-600/20 border border-blue-500/40 text-[10px] font-bold uppercase tracking-widest text-blue-400">
+          Projekt Honzy Šimka
+        </span>
+    </div>
+  </header>
+
+  <main class="max-w-6xl mx-auto px-4 pb-20 pt-12">
+
+<section class="max-w-3xl mx-auto mb-16 text-center">
+  <div class="warning-pulse bg-red-950/20 border-2 border-red-500/50 rounded-2xl px-6 py-6 shadow-2xl">
+    <p class="text-red-400 font-bold text-base sm:text-lg mb-2">
+      VAROVÁNÍ: VSTUPUJETE DO REALITY BEZ FILTRU.
+    </p>
+    <p class="text-red-200/80 text-sm sm:text-base leading-relaxed">
+POZOR: Texty na tomto webu jsou záměrně přímé, syrové a často nekorektní. <br class="hidden sm:block">
+      Mají za cíl vás probrat z letargie a ukázat realitu bez růžových brýlí. <br class="hidden sm:block">
+      To, že zde píšu bez obalu, neznamená, že se tak chovám v běžném životě – nejsem hulvát a respektuji slušné lidi. Pokud ale hledáte "hezky zabalenou" osvětu, jste tu špatně. Tady najdete pravdu, i když občas pálí.
+    </p>
+  </div>
+</section>
+
+    <section class="mb-20 text-center">
+      <h1 class="text-5xl sm:text-7xl md:text-8xl font-black mb-8 leading-[0.9] tracking-tighter">
+        <span class="block opacity-50 text-3xl sm:text-4xl mb-2">Nevidím.</span>
+        <span class="block text-blue-500 text-glow">Vidím to jinak.</span>
+        <span class="block text-2xl sm:text-3xl mt-4 font-light text-slate-400 tracking-normal italic">A řeknu vám to na rovinu.</span>
+      </h1>
+      <p class="max-w-xl mx-auto text-slate-400 text-lg">
+        Tohle není klasický edukační web. <br>
+        <strong>Tohle je realita bez filtru.</strong>
+      </p>
+    </section>
+
+    <section class="mb-12">
+      <a href="articles/001._co_lide_nechapou.html"
+         class="group block bg-gradient-to-br from-slate-900 to-slate-950 border border-slate-800 rounded-3xl p-8 sm:p-12 hover:border-blue-500/50 transition-all duration-500 shadow-2xl">
+        <div class="flex flex-col md:flex-row gap-8 items-center">
+          <div class="flex-1 text-center md:text-left">
+            <p class="text-blue-500 text-xs font-bold uppercase tracking-[0.2em] mb-4">Doporučené čtení</p>
+            <h2 class="text-3xl sm:text-4xl font-extrabold mb-4 group-hover:text-blue-400 transition-colors">
+              Co lidé nechápou o nevidomých
+            </h2>
+            <p class="text-slate-400 text-lg mb-6 leading-relaxed">
+              Každodenní situace, které by nevymyslel ani scénárista špatné komedie. 
+              Proč nás vaše "pomoc" někdy vytáčí k nepříčetnosti?
+            </p>
+            <span class="inline-block bg-blue-600 group-hover:bg-blue-500 text-white font-bold py-3 px-8 rounded-full transition-all">
+              Číst článek
+            </span>
+          </div>
+          <div class="hidden md:flex text-9xl opacity-20 group-hover:opacity-100 transition-opacity duration-500 group-hover:scale-110">
+            👀
+          </div>
+        </div>
+      </a>
+    </section>
+
+    <section>
+      <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+
+        <a href="articles/002._nevidomi_v_beznem_zivote.html" class="card-hover group bg-slate-900/50 rounded-2xl overflow-hidden flex flex-col">
+          <div class="h-40 w-full bg-gradient-to-br from-blue-600 to-indigo-700 flex items-center justify-center text-5xl group-hover:scale-110 transition-transform">👥</div>
+          <div class="p-6">
+            <p class="text-blue-500 text-[10px] font-bold uppercase tracking-widest mb-2">Realita</p>
+            <h3 class="font-bold text-xl mb-2">Nevidomí v běžném životě</h3>
+            <p class="text-sm text-slate-400">Co si myslíte vs. jak to doopravdy je bez růžových brýlí.</p>
+          </div>
+        </a>
+
+        <a href="articles/003._chces_muj_duchod_tak_si_ho_vezmi_i_s_handicapem.html" class="card-hover group bg-slate-900/50 rounded-2xl overflow-hidden flex flex-col">
+          <div class="h-40 w-full bg-gradient-to-br from-red-600 to-orange-700 flex items-center justify-center text-5xl group-hover:scale-110 transition-transform">💰</div>
+          <div class="p-6">
+            <p class="text-red-500 text-[10px] font-bold uppercase tracking-widest mb-2">Provokace</p>
+            <h3 class="font-bold text-xl mb-2">Chceš můj důchod? Tak si ho vezmi!</h3>
+            <p class="text-sm text-slate-400">Odpověď všem, co nám závidí těch pár korun od státu.</p>
+          </div>
+        </a>
+
+        <a href="articles/004._nevidis_co.html" class="card-hover group bg-slate-900/50 rounded-2xl overflow-hidden flex flex-col">
+          <div class="h-40 w-full bg-gradient-to-br from-slate-700 to-slate-900 flex items-center justify-center text-5xl group-hover:scale-110 transition-transform">👓</div>
+          <div class="p-6">
+            <p class="text-slate-400 text-[10px] font-bold uppercase tracking-widest mb-2">Varování</p>
+            <h3 class="font-bold text-xl mb-2">Příručka pro idioty</h3>
+            <p class="text-sm text-slate-400">Proč nám nikdy, ale fakt nikdy, nebrat brýle z obličeje.</p>
+          </div>
+        </a>
+
+        <a href="articles/005._navod_pro_zdrave_lidi.html" class="card-hover group bg-slate-900/50 rounded-2xl overflow-hidden flex flex-col">
+          <div class="h-40 w-full bg-gradient-to-br from-emerald-600 to-teal-700 flex items-center justify-center text-5xl group-hover:scale-110 transition-transform">🤝</div>
+          <div class="p-6">
+            <p class="text-emerald-500 text-[10px] font-bold uppercase tracking-widest mb-2">Manuál</p>
+            <h3 class="font-bold text-xl mb-2">Jak nebýt idiot a pomoct správně</h3>
+            <p class="text-sm text-slate-400">Návod, jak s námi jednat jako s lidmi, ne s kusy nábytku.</p>
+          </div>
+        </a>
+
+        <a href="articles/006._vodici_pes.html" class="card-hover group bg-slate-900/50 rounded-2xl overflow-hidden flex flex-col">
+          <div class="h-40 w-full bg-gradient-to-br from-yellow-600 to-amber-700 flex items-center justify-center text-5xl group-hover:scale-110 transition-transform">🐕‍🦺</div>
+          <div class="p-6">
+            <p class="text-yellow-500 text-[10px] font-bold uppercase tracking-widest mb-2">Parťák</p>
+            <h3 class="font-bold text-xl mb-2">Není to mazlíček. Je to vodicí pes.</h3>
+            <p class="text-sm text-slate-400">Proč vodícího psa nemáte hladit, krmit ani na něj mlaskat.</p>
+          </div>
+        </a>
+
+        <a href="articles/007._slepi_v_hospode.html" class="card-hover group bg-slate-900/50 rounded-2xl overflow-hidden flex flex-col">
+          <div class="h-40 w-full bg-gradient-to-br from-amber-800 to-orange-950 flex items-center justify-center text-5xl group-hover:scale-110 transition-transform">🍻</div>
+          <div class="p-6">
+            <p class="text-orange-500 text-[10px] font-bold uppercase tracking-widest mb-2">Společnost</p>
+            <h3 class="font-bold text-xl mb-2">Slepý v hospodě</h3>
+            <p class="text-sm text-slate-400">O tom, jak si vychutnat pivo, i když na něj nevidíte.</p>
+          </div>
+        </a>
+
+        <a href="articles/008._ja_bych_to_nedal.html" class="card-hover group bg-slate-900/50 rounded-2xl overflow-hidden flex flex-col">
+          <div class="h-40 w-full bg-gradient-to-br from-amber-800 to-orange-950 flex items-center justify-center text-5xl group-hover:scale-110 transition-transform">🕶️</div>
+          <div class="p-6">
+            <p class="text-orange-500 text-[10px] font-bold uppercase tracking-widest mb-2">Společnost</p>
+            <h3 class="font-bold text-xl mb-2">Ty jsi frajer, já bych to nedal.</h3>
+            <p class="text-sm text-slate-400">V tomto článku si popíšeme, proč se touto větou defacto shazujete, a proč by to tak  nemělo být. </p>
+          </div>
+        </a>
+
+        <a href="articles/009._jak_muzes_mit_deti.html" class="card-hover group bg-slate-900/50 rounded-2xl overflow-hidden flex flex-col">
+          <div class="h-40 w-full bg-gradient-to-br from-amber-800 to-orange-950 flex items-center justify-center text-5xl group-hover:scale-110 transition-transform">👶</div>
+          <div class="p-6">
+            <p class="text-orange-500 text-[10px] font-bold uppercase tracking-widest mb-2">Společnost</p>
+            <h3 class="font-bold text-xl mb-2">Jak můžeš mít děti, když nevidíš?</h3>
+            <p class="text-sm text-slate-400">A proč ne? Proč by nevidomý pár neměl mít děti? V tomto článku si to vysvětlíme.</p>
+          </div>
+        </a>
+
+        <a href="articles/010._to_musis_tamhle.html" class="card-hover group bg-slate-900/50 rounded-2xl overflow-hidden flex flex-col">
+          <div class="h-40 w-full bg-gradient-to-br from-amber-800 to-orange-950 flex items-center justify-center text-5xl group-hover:scale-110 transition-transform">🧭</div>
+          <div class="p-6">
+            <p class="text-orange-500 text-[10px] font-bold uppercase tracking-widest mb-2">Společnost</p>
+            <h3 class="font-bold text-xl mb-2">Támhle“ neexistuje! Rychlokurz navigace pro lidi, co nechtějí být za idioty.</h3>
+            <p class="text-sm text-slate-400">Potkáte nevidomého, který se vás ptá na cestu. Vy jen mávnete rukou, a řeknete. To musíš jít támhle. Proč je to naprostá blbost, a jak by se to mělo správně dělat? To si popíšeme v tomto článku.</p>
+          </div>
+        </a>
+
+      </div>
+    </section>
+
+    <footer class="mt-20 pt-8 border-t border-slate-800 text-center">
+      <p class="text-slate-500 text-sm">
+        Další články přibývají postupně. <br>
+        Sledujte tento prostor pro další dávku reality.
+      </p>
+    </footer>
+
+<footer class="mt-20 pt-8 border-t border-slate-800 text-center">
+  <p class="text-slate-400 font-bold mb-1">
+    © 2026 Jan Šimek | Vidím to jinak
+  </p>
+  <p class="text-slate-600 text-[10px] uppercase tracking-[0.2em]">
+    Obsah je chráněn autorským zákonem. Jakékoli šíření bez souhlasu autora je zakázáno.
+  </p>
+</footer>
+  </main>
+
+</body>
+</html>

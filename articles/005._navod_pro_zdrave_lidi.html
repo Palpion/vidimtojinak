@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Návod pro zdravé lidi | Vidím to jinak</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    :root {
+      --bg-dark: #020617;
+      --accent-blue: #3b82f6;
+    }
+
+    body {
+      background-color: var(--bg-dark);
+      background-image: radial-gradient(at 50% 0%, rgba(30, 58, 138, 0.2) 0px, transparent 50%);
+      min-height: 100vh;
+    }
+
+    /* Progress bar nahoře */
+    #progress-bar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 3px;
+      background: linear-gradient(to right, var(--accent-blue), #60a5fa);
+      width: 0%;
+      z-index: 100;
+      transition: width 0.1s;
+    }
+
+    /* Typografie a odstavce */
+    .prose-custom p {
+      margin-bottom: 1.5rem;
+      line-height: 1.8;
+      color: #cbd5e1; /* slate-300 */
+    }
+
+    /* První odstavec - "perex" */
+    .prose-custom p:first-of-type {
+      font-size: 1.25rem;
+      font-weight: 500;
+      color: #f1f5f9; /* slate-100 */
+      line-height: 1.6;
+      border-left: 4px solid var(--accent-blue);
+      padding-left: 1.5rem;
+      margin-bottom: 2.5rem;
+    }
+
+    /* Nadpisy v článku */
+    .prose-custom h2, .prose-custom h3 {
+      color: #f1f5f9;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      margin-top: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    .prose-custom h2 { font-size: 1.875rem; }
+    .prose-custom h3 { font-size: 1.5rem; }
+
+    /* Zvýraznění (tučný text) */
+    .prose-custom strong {
+      color: #f8fafc;
+      font-weight: 700;
+    }
+
+    /* TL;DR Box (Shrnutí) */
+    .tldr-box {
+      background: rgba(30, 41, 59, 0.5);
+      border: 1px solid rgba(59, 130, 246, 0.3);
+      border-radius: 1rem;
+      padding: 1.5rem;
+      margin-bottom: 2.5rem;
+    }
+
+    /* Citace (ty nekorektní hlášky) */
+    blockquote {
+      font-style: italic;
+      font-size: 1.2rem;
+      border-left: 4px solid #ef4444; /* Červená pro důraz */
+      background: rgba(239, 68, 68, 0.05);
+      padding: 1.5rem;
+      margin: 2rem 0;
+      color: #fca5a5;
+    }
+
+    /* Odrážky */
+    .prose-custom ul {
+      margin-bottom: 1.5rem;
+      list-style-type: none;
+    }
+
+    .prose-custom li {
+      margin-bottom: 0.5rem;
+      padding-left: 1.5rem;
+      position: relative;
+    }
+  </style>
+</head>
+
+<body class="font-sans antialiased text-slate-100 text-lg">
+
+  <div id="progress-bar"></div>
+
+  <header class="w-full border-b border-slate-800/60 bg-slate-950/70 backdrop-blur sticky top-0 z-50">
+    <div class="max-w-4xl mx-auto px-4 py-3 flex items-center justify-between">
+      <a href="../index.html" class="group flex items-center gap-2 text-slate-400 hover:text-white transition-colors">
+        <span class="text-xl group-hover:-translate-x-1 transition-transform">←</span>
+        <span class="text-sm font-bold uppercase tracking-widest">Všechny články</span>
+      </a>
+      <span class="text-[10px] text-slate-500 uppercase tracking-[0.3em] font-black">Vidím to jinak</span>
+    </div>
+  </header>
+
+  <main class="max-w-3xl mx-auto px-4 pb-20 pt-12">
+
+    <header class="mb-12">
+      <h1 class="text-4xl sm:text-5xl font-black mb-4 leading-tight tracking-tighter">
+        Návod pro zdravé lidi: Jak nebýt idiot a pomoct správně
+      </h1>
+      <div class="flex items-center gap-4 text-xs text-slate-500 uppercase tracking-widest font-bold">
+        <span>Publikováno: <time>19. 04. 2026</time></span>
+        <span class="w-1 h-1 bg-slate-700 rounded-full"></span>
+        <span>Čtení na 5 minut</span>
+      </div>
+    </header>
+
+    <div class="tldr-box">
+      <h4 class="text-blue-400 font-black text-xs uppercase tracking-[0.2em] mb-3">Shrnutí pro lidi v presu</h4>
+      <p class="text-slate-300 text-sm leading-relaxed italic">
+        Pomoc nevidomému má dvě podoby: buď je to normální lidská interakce, nebo totální katastrofa. Stačí přitom otevřít pusu a pak ji zase na chvíli zavřít.
+      </p>
+    </div>
+
+    <article id="article-content" class="prose-custom max-w-none">
+      <p> Návod pro zdravé lidi: Jak nebýt idiot a pomoct správně</p>
+<p> 👀 Pomoc nevidomému má dvě podoby: buď je to normální lidská interakce, nebo totální katastrofa. Stačí přitom otevřít pusu a pak ji zase na chvíli zavřít.</p>
+<p> Tenhle článek není hezký, ale za to je pravdivý. Většina lidí si bohužel vybírá tu druhou cestu – cestu katastrofy. Přitom stačí tak málo.</p>
+<p> "Nejste hrdinové jen proto, že někoho chytnete za ruku. Někdy tím situaci spíš brutálně zhoršíte."</p>
+<h2>✔️ Jak vypadá normální pomoc</h2>
+<p> Jdeš po ulici, potkáš nevidomého a nejsi si jistý, jestli to dává.</p>
+<div class='flex gap-3 mb-4 items-start'><span class='shrink-0'>👉</span><span>„Dobrý den, můžu vám nějak pomoct?“</span></div>
+<div class='flex gap-3 mb-4 items-start'><span class='shrink-0'>👉</span><span>„Děkuji, potřeboval bych přejít.“</span></div>
+<div class='flex gap-3 mb-4 items-start'><span class='shrink-0'>👉</span><span>„Jasně. Chcete se mě chytnout za rameno, nebo za ruku?“</span></div>
+<div class='flex gap-3 mb-4 items-start'><span class='shrink-0'>👉</span><span>„Za rameno, prosím.“</span></div>
+<p> Hotovo. Nikdo nikoho netahá, nikdo není v šoku. Pokud pomoc není potřeba, stačí říct „V pořádku, mějte se“ a jít dál. Bez dramatu a bez uraženého ega.</p>
+<h2>❌ Jak to rozhodně NEDĚLAT</h2>
+<p> Jdeš po ulici a vidíš slepce. Najednou ho bez varování čapneš a začneš ho vláčet přes cestu, i když se brání.</p>
+<p> "Gratuluju. Právě jsi někomu způsobil infarkt a myslíš si, že jsi hrdina dne."</p>
+<p> Tohle se děje častěji, než byste čekali. Když mě někdo bez varování chytne, leknu se, ztratím orientaci a můžu i spadnout. A když mi na to někdo řekne: „Čeho se lekáš?“, tak si zkuste představit, že vás někdo zezadu nečekaně chytne uprostřed rušné ulice.</p>
+<h2>⚠️ Noční můra jménem zima</h2>
+<p> V zimě mám horší stabilitu, jdu pomalu a dávám si pozor.</p>
+<div class='flex gap-3 mb-4 items-start'><span class='shrink-0'>👉</span><span>Někdo mě nečekaně chytne.</span></div>
+<div class='flex gap-3 mb-4 items-start'><span class='shrink-0'>👉</span><span>Zatáhne mě směrem, kam nechci.</span></div>
+<div class='flex gap-3 mb-4 items-start'><span class='shrink-0'>👉</span><span>Já uklouznu a letím.</span></div>
+<p> Tohle není pomoc. To je hazard s mým zdravím.</p>
+<h2>❌ Bonus: „Mladej“ a uražení zachránci</h2>
+<p> Prosím vás… ne. Nemám na čele napsáno „mladej“. Mám jméno a nejsem váš kámoš z pískoviště. Mluvte se mnou normálně.</p>
+<h2>A pak je tu kategorie „uražený zachránce“:</h2>
+<div class='flex gap-3 mb-4 items-start'><span class='shrink-0'>👉</span><span>„Pomůžu vám.“</span></div>
+<div class='flex gap-3 mb-4 items-start'><span class='shrink-0'>👉</span><span>„Děkuju, ale zvládnu to.“</span></div>
+<div class='flex gap-3 mb-4 items-start'><span class='shrink-0'>👉</span><span>„No jo, vy slepí si ničeho nevážíte…“</span></div>
+<p> "Pomoc není povinnost, kterou musím přijmout, abyste vy měli dobrý pocit ze svého spasitelství."</p>
+<h2>🧠 Závěr: Používej hlavu</h2>
+<p> Fakt to není složitý. Hlava není jen na účes nebo selfie, je i na přemýšlení. Stačí dodržovat tohle:</p>
+<div class='flex gap-3 mb-4 items-start'><span class='shrink-0'>✅</span><span>Zeptej se: „Můžu pomoct?“</span></div>
+<div class='flex gap-3 mb-4 items-start'><span class='shrink-0'>✅</span><span>Počkej na odpověď a respektuj ji.</span></div>
+<div class='flex gap-3 mb-4 items-start'><span class='shrink-0'>✅</span><span>Nesahej bez dovolení (na mě, na hůl, ani na batoh).</span></div>
+<p> Naučte se komunikovat. Je to ta největší pomoc, kterou nám můžete nabídnout.</p>
+
+    </article>
+
+    <footer class="mt-16 pt-8 border-t border-slate-800">
+      <div class="bg-blue-600/10 border border-blue-500/20 rounded-2xl p-6 text-center">
+        <p class="text-blue-300 font-bold mb-2 text-sm uppercase tracking-widest">Líbilo se ti to?</p>
+        <p class="text-slate-400 text-sm mb-4 italic">Zkus o tom přemýšlet, až příště potkáš někoho s bílou holí. Možná to "támhle" fakt vynecháš.</p>
+        <a href="../index.html" class="inline-block bg-blue-600 hover:bg-blue-500 text-white font-bold py-2 px-6 rounded-full text-sm transition-all">
+          Zpět na hlavní stránku
+        </a>
+      </div>
+    </footer>
+
+  </main>
+
+  <script>
+    // Skript pro progress bar
+    window.onscroll = function() {
+      let winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+      let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      let scrolled = (winScroll / height) * 100;
+      document.getElementById("progress-bar").style.width = scrolled + "%";
+    };
+  </script>
+
+</body>
+</html>

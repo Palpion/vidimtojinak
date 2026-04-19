@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Slepý v hospodě: Pivo vidět nemusím, hlavně když ho cítím! | Vidím to jinak</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    :root {
+      --bg-dark: #020617;
+      --accent-blue: #3b82f6;
+    }
+
+    body {
+      background-color: var(--bg-dark);
+      background-image: radial-gradient(at 50% 0%, rgba(30, 58, 138, 0.2) 0px, transparent 50%);
+      min-height: 100vh;
+    }
+
+    /* Progress bar nahoře */
+    #progress-bar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 3px;
+      background: linear-gradient(to right, var(--accent-blue), #60a5fa);
+      width: 0%;
+      z-index: 100;
+      transition: width 0.1s;
+    }
+
+    /* Typografie a odstavce */
+    .prose-custom p {
+      margin-bottom: 1.5rem;
+      line-height: 1.8;
+      color: #cbd5e1; /* slate-300 */
+    }
+
+    /* První odstavec - "perex" */
+    .prose-custom p:first-of-type {
+      font-size: 1.25rem;
+      font-weight: 500;
+      color: #f1f5f9; /* slate-100 */
+      line-height: 1.6;
+      border-left: 4px solid var(--accent-blue);
+      padding-left: 1.5rem;
+      margin-bottom: 2.5rem;
+    }
+
+    /* Nadpisy v článku */
+    .prose-custom h2, .prose-custom h3 {
+      color: #f1f5f9;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      margin-top: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    .prose-custom h2 { font-size: 1.875rem; }
+    .prose-custom h3 { font-size: 1.5rem; }
+
+    /* Zvýraznění (tučný text) */
+    .prose-custom strong {
+      color: #f8fafc;
+      font-weight: 700;
+    }
+
+    /* TL;DR Box (Shrnutí) */
+    .tldr-box {
+      background: rgba(30, 41, 59, 0.5);
+      border: 1px solid rgba(59, 130, 246, 0.3);
+      border-radius: 1rem;
+      padding: 1.5rem;
+      margin-bottom: 2.5rem;
+    }
+
+    /* Citace (ty nekorektní hlášky) */
+    blockquote {
+      font-style: italic;
+      font-size: 1.2rem;
+      border-left: 4px solid #ef4444; /* Červená pro důraz */
+      background: rgba(239, 68, 68, 0.05);
+      padding: 1.5rem;
+      margin: 2rem 0;
+      color: #fca5a5;
+    }
+
+    /* Odrážky */
+    .prose-custom ul {
+      margin-bottom: 1.5rem;
+      list-style-type: none;
+    }
+
+    .prose-custom li {
+      margin-bottom: 0.5rem;
+      padding-left: 1.5rem;
+      position: relative;
+    }
+  </style>
+</head>
+
+<body class="font-sans antialiased text-slate-100 text-lg">
+
+  <div id="progress-bar"></div>
+
+  <header class="w-full border-b border-slate-800/60 bg-slate-950/70 backdrop-blur sticky top-0 z-50">
+    <div class="max-w-4xl mx-auto px-4 py-3 flex items-center justify-between">
+      <a href="../index.html" class="group flex items-center gap-2 text-slate-400 hover:text-white transition-colors">
+        <span class="text-xl group-hover:-translate-x-1 transition-transform">←</span>
+        <span class="text-sm font-bold uppercase tracking-widest">Všechny články</span>
+      </a>
+      <span class="text-[10px] text-slate-500 uppercase tracking-[0.3em] font-black">Vidím to jinak</span>
+    </div>
+  </header>
+
+  <main class="max-w-3xl mx-auto px-4 pb-20 pt-12">
+
+    <header class="mb-12">
+      <h1 class="text-4xl sm:text-5xl font-black mb-4 leading-tight tracking-tighter">
+        Slepý v hospodě: Pivo vidět nemusím, hlavně když ho cítím!
+      </h1>
+      <div class="flex items-center gap-4 text-xs text-slate-500 uppercase tracking-widest font-bold">
+        <span>Publikováno: <time>19. 04. 2026</time></span>
+        <span class="w-1 h-1 bg-slate-700 rounded-full"></span>
+        <span>Čtení na 5 minut</span>
+      </div>
+    </header>
+
+    <div class="tldr-box">
+      <h4 class="text-blue-400 font-black text-xs uppercase tracking-[0.2em] mb-3">Shrnutí pro lidi v presu</h4>
+      <p class="text-slate-300 text-sm leading-relaxed italic">
+        Jít do restaurace je pro vidící banalita. Pro nás je jídelní lístek často jen drahý kus papíru na ovívání. Jak vypadá realita u stolu, když oči nefungují, ale chuťové buňky jsou v pohotovosti?
+      </p>
+    </div>
+
+    <article id="article-content" class="prose-custom max-w-none">
+      <blockquote> Slepý v hospodě: Pivo vidět nemusím, hlavně když ho cítím!</blockquote>
+<p> 👀 Jít do restaurace je pro vidící banalita. Pro nás je jídelní lístek často jen drahý kus papíru na ovívání. Jak vypadá realita u stolu, když oči nefungují, ale chuťové buňky jsou v pohotovosti?</p>
+<p> Jít do restaurace nebo do hospody je pro vidícího banalita. Prostě si sednete, číšník před vás hodí jídelák a vy si vybíráte. Jenže pro nás je ten lístek často k ničemu. Jak vypadá realita „u stolu“, když vám nefungují oči?</p>
+<p> "Hospoda, kde nejsem host, ale obtížný hmyz, si moje peníze nezaslouží."</p>
+<h3>Jídelní lístek: Test trpělivosti</h3>
+<p> Když mi číšník položí na stůl menu, narazím buď na normálního člověka, nebo na ignoranta.</p>
+<div class='flex gap-3 mb-4 items-start'><span class='shrink-0'>👉</span><span>Scénář A (Normální svět): Číšník vyjmenuje, co mají na čepu, já si v mobilu prolustruju nabídku a za minutu je objednáno. Čistá práce.</span></div>
+<div class='flex gap-3 mb-4 items-start'><span class='shrink-0'>👉</span><span>Scénář B (Vítejte v pravěku): „Co to bude?“ ptá se obsluha. „Jaké máte pivo?“ „Si to přečtěte, tady máte lístek!“ „Já na něj nevidím...“ „Tak jste si měl přivést doprovod, já nemám čas!“</span></div>
+<p> V tuhle chvíli se slušně rozloučím a odcházím. Tečka.</p>
+<h3>Umělá inteligence vs. Hospodská klasika</h3>
+<p> Dneska už naštěstí nejsem odkázaný jen na ochotu personálu. Vytáhnu svůj Android (jablka nechte koním), vyfotím lístek a pošlu ho své oblíbené AI. „Co tu mají k jídlu?“ ptám se mobilu. A on mi to všechno přečte.</p>
+<p> "Vypadám pak jako největší frajer, co ví přesně, co chce, aniž by do toho papíru jednou koukl."</p>
+<h3>„Já vám to nakrájím!“ – Ne, díky</h3>
+<p> Další věc, co mě spolehlivě vytáčí, je přehnaná péče. Nám nefunguje zrak, ale ruce máme v cajku. Nakrájet flákotu zvládáme. A korunu tomu nasazují „knedlíkoví poradci“.</p>
+<p> "Namoč si ten knedlík do omáčky, ať ho nemáš suchej! Hele, já vím, jak se jí. Vysvětlit vidícímu, že vím, co dělám, je občas nadlidský úkon."</p>
+<h3>Na zdraví! (A pozor na zuby)</h3>
+<p> Přiťuknout si, když na sebe nevidíte? Jde to. Je v tom nějaký šestý smysl. I když, ne vždycky se to povede. Jednou jsme si chtěli s kámošem cinknout, ale on místo o moji sklenici cinknul o můj obličej. Trochu mě to probralo, ale byla to skvělá historka.</p>
+<h3>Placení a „chudáčci slepouni“</h3>
+<p> Placení kartou na dotykovém displeji bez hmatových bodů je peklo. Proto radši platím telefonem přes Google Pay. Pípnu a jdu.</p>
+<p> "Nejvíc mě ale vytočí nespravedlnost. Seděli jsme s kámošem na zahrádce, smáli se a najednou přikvačila servírka: ‚Ztište se!‘"</p>
+<p> Povídám jí: „A to, že vedlejší stůl řve jak na lesy, vám nevadí? Vy jdete buzerovat nás, protože si myslíte, že jsme chudáčci, co se nebudou bránit?“ Výsledek? Peníze na stůl, osm piv zaplaceno a jasný vzkaz: Jdeme pryč a už nás tu neuvidíte.</p>
+<h2>🎯 Závěr</h2>
+<p> V hospodě chceme být normální hosté. Nechceme speciální zacházení, nechceme krájet jídlo a už vůbec nechceme, aby nás někdo okřikoval jen proto, že nás „líp trefí“.</p>
+<div class='flex gap-3 mb-4 items-start'><span class='shrink-0'>✅</span><span>Chceme si dát pivo.</span></div>
+<div class='flex gap-3 mb-4 items-start'><span class='shrink-0'>✅</span><span>Chceme se zasmát.</span></div>
+<div class='flex gap-3 mb-4 items-start'><span class='shrink-0'>✅</span><span>Chceme zaplatit.</span></div>
+<p> Tak nás nechte žít (a pít) tak, jak to vyhovuje nám. A když budeme potřebovat pomoct, tak si o ni řekneme.</p>
+
+    </article>
+
+    <footer class="mt-16 pt-8 border-t border-slate-800">
+      <div class="bg-blue-600/10 border border-blue-500/20 rounded-2xl p-6 text-center">
+        <p class="text-blue-300 font-bold mb-2 text-sm uppercase tracking-widest">Líbilo se ti to?</p>
+        <p class="text-slate-400 text-sm mb-4 italic">I my si chceme po práci zajít na pivo. Zkuste nás prosím brát jako normální lidi.</p>
+        <a href="../index.html" class="inline-block bg-blue-600 hover:bg-blue-500 text-white font-bold py-2 px-6 rounded-full text-sm transition-all">
+          Zpět na hlavní stránku
+        </a>
+      </div>
+    </footer>
+
+  </main>
+
+  <script>
+    // Skript pro progress bar
+    window.onscroll = function() {
+      let winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+      let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      let scrolled = (winScroll / height) * 100;
+      document.getElementById("progress-bar").style.width = scrolled + "%";
+    };
+  </script>
+
+</body>
+</html>

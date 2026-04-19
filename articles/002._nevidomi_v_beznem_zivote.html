@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nevidomí v běžném životě: Co si myslíte vs. jak to doopravdy je| Vidím to jinak</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    :root {
+      --bg-dark: #020617;
+      --accent-blue: #3b82f6;
+    }
+
+    body {
+      background-color: var(--bg-dark);
+      background-image: radial-gradient(at 50% 0%, rgba(30, 58, 138, 0.2) 0px, transparent 50%);
+      min-height: 100vh;
+    }
+
+    /* Progress bar nahoře */
+    #progress-bar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 3px;
+      background: linear-gradient(to right, var(--accent-blue), #60a5fa);
+      width: 0%;
+      z-index: 100;
+      transition: width 0.1s;
+    }
+
+    /* Typografie a odstavce */
+    .prose-custom p {
+      margin-bottom: 1.5rem;
+      line-height: 1.8;
+      color: #cbd5e1; /* slate-300 */
+    }
+
+    /* První odstavec - "perex" */
+    .prose-custom p:first-of-type {
+      font-size: 1.25rem;
+      font-weight: 500;
+      color: #f1f5f9; /* slate-100 */
+      line-height: 1.6;
+      border-left: 4px solid var(--accent-blue);
+      padding-left: 1.5rem;
+      margin-bottom: 2.5rem;
+    }
+
+    /* Nadpisy v článku */
+    .prose-custom h2, .prose-custom h3 {
+      color: #f1f5f9;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      margin-top: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    .prose-custom h2 { font-size: 1.875rem; }
+    .prose-custom h3 { font-size: 1.5rem; }
+
+    /* Zvýraznění (tučný text) */
+    .prose-custom strong {
+      color: #f8fafc;
+      font-weight: 700;
+    }
+
+    /* TL;DR Box (Shrnutí) */
+    .tldr-box {
+      background: rgba(30, 41, 59, 0.5);
+      border: 1px solid rgba(59, 130, 246, 0.3);
+      border-radius: 1rem;
+      padding: 1.5rem;
+      margin-bottom: 2.5rem;
+    }
+
+    /* Citace (ty nekorektní hlášky) */
+    blockquote {
+      font-style: italic;
+      font-size: 1.2rem;
+      border-left: 4px solid #ef4444; /* Červená pro důraz */
+      background: rgba(239, 68, 68, 0.05);
+      padding: 1.5rem;
+      margin: 2rem 0;
+      color: #fca5a5;
+    }
+
+    /* Odrážky */
+    .prose-custom ul {
+      margin-bottom: 1.5rem;
+      list-style-type: none;
+    }
+
+    .prose-custom li {
+      margin-bottom: 0.5rem;
+      padding-left: 1.5rem;
+      position: relative;
+    }
+  </style>
+</head>
+
+<body class="font-sans antialiased text-slate-100 text-lg">
+
+  <div id="progress-bar"></div>
+
+  <header class="w-full border-b border-slate-800/60 bg-slate-950/70 backdrop-blur sticky top-0 z-50">
+    <div class="max-w-4xl mx-auto px-4 py-3 flex items-center justify-between">
+      <a href="../index.html" class="group flex items-center gap-2 text-slate-400 hover:text-white transition-colors">
+        <span class="text-xl group-hover:-translate-x-1 transition-transform">←</span>
+        <span class="text-sm font-bold uppercase tracking-widest">Všechny články</span>
+      </a>
+      <span class="text-[10px] text-slate-500 uppercase tracking-[0.3em] font-black">Vidím to jinak</span>
+    </div>
+  </header>
+
+  <main class="max-w-3xl mx-auto px-4 pb-20 pt-12">
+
+    <header class="mb-12">
+      <h1 class="text-4xl sm:text-5xl font-black mb-4 leading-tight tracking-tighter">
+        Nevidomí v běžném životě: Co si myslíte vs. jak to doopravdy je
+      </h1>
+      <div class="flex items-center gap-4 text-xs text-slate-500 uppercase tracking-widest font-bold">
+        <span>Publikováno: <time>19. 04. 2026</time></span>
+        <span class="w-1 h-1 bg-slate-700 rounded-full"></span>
+        <span>Čtení na 5 minut</span>
+      </div>
+    </header>
+
+    <div class="tldr-box">
+      <h4 class="text-blue-400 font-black text-xs uppercase tracking-[0.2em] mb-3">Shrnutí pro lidi v presu</h4>
+      <p class="text-slate-300 text-sm leading-relaxed italic">
+        Spousta lidí si myslí, že život bez zraku je tragédie. Realita? Je to systém, technologie a rutina. Pojďme zbořit mýty, které nás dělají bezmocnějšími, než jsme.
+      </p>
+    </div>
+
+    <article id="article-content" class="prose-custom max-w-none">
+      <p> Nevidomí v běžném životě: Co si myslíte vs. jak to doopravdy je</p>
+<p> 👀 Spousta lidí si myslí, že život bez zraku je tragédie. Realita? Je to systém, technologie a rutina. Pojďme zbořit mýty, které nás dělají bezmocnějšími, než jsme.</p>
+<p> Spousta lidí si myslí, že život bez zraku musí být něco mezi tragédií a permanentní krizí. Že nevidomý potřebuje pořád pomoc, nezvládne nákup a ideálně sedí doma a čeká, až ho někdo zachrání.</p>
+<p> "Realita? Je úplně jinde. Nejsme bezmocní, jen fungujeme v jiném režimu."</p>
+<h2>🔥 Nejčastější mýty (a proč neplatí)</h2>
+<h3>1. Nevidomý = bezmocný</h3>
+<p> 🔴 Mýtus: Nevidomý bez pomoci nepřežije ani nákup.</p>
+<div class='flex gap-3 mb-4 items-start'><span class='shrink-0'>✅</span><span>Realita: Většina nevidomých normálně chodí do práce, vaří a řeší běžný život. Technologie a systém dělají svoje.</span></div>
+<h3>2. Máme superschopnosti</h3>
+<p> 🔴 Mýtus: Oslepneš = zapne se ti režim Daredevil.</p>
+<div class='flex gap-3 mb-4 items-start'><span class='shrink-0'>✅</span><span>Realita: Nezačnu slyšet skrz zdi. Jen víc používám to, co mám. Vidící může ignorovat zvuky, já nemůžu. To není magie. To je nutnost.</span></div>
+<h3>3. Každý má vodicího psa</h3>
+<p> 🔴 Mýtus: Nemáš psa? Tak asi simuluješ.</p>
+<div class='flex gap-3 mb-4 items-start'><span class='shrink-0'>✅</span><span>Realita: Pes je závazek a práce. Spousta lidí radši používá bílou hůl. Je to jednodušší a praktičtější.</span></div>
+<h3>4. Nevidomý nemůže pracovat</h3>
+<p> 🔴 Mýtus: Maximálně masér nebo košíkář.</p>
+<div class='flex gap-3 mb-4 items-start'><span class='shrink-0'>✅</span><span>Realita: Programátoři, učitelé, právníci... technologie otevřely dveře, které byly dřív zavřené. Je to dnes už naprostý standard.</span></div>
+<h2>⚠️ Největší problém: „Já ti pomůžu!“</h2>
+<p> Největší fail není neznalost. Je to nevyžádaná pomoc. Lidi mají potřebu nás zachraňovat, i když není co.</p>
+<blockquote> "Nejsem mentálně postižený, tak se mnou laskavě mluvte normálně!"</blockquote>
+<h3>Jak na to v praxi (Situace):</h3>
+<div class='flex gap-3 mb-4 items-start'><span class='shrink-0'>👉</span><span>Přechod: „Potřebujete pomoct přejít?“ (Místo toho, abyste nás hned táhli za ruku).</span></div>
+<div class='flex gap-3 mb-4 items-start'><span class='shrink-0'>👉</span><span>MHD: „Vedle vás je volné místo, chcete si sednout?“ (Místo strčení do sedačky bez varování).</span></div>
+<div class='flex gap-3 mb-4 items-start'><span class='shrink-0'>👉</span><span>Obchod: „Můžu vám pomoct něco najít?“ (Místo mluvení na můj doprovod).</span></div>
+<h3>U lékaře (Moje noční můra):</h3>
+<div class='flex gap-3 mb-4 items-start'><span class='shrink-0'>❌</span><span>„A má pán u sebe doklady?“ (Mluvíte na doprovod, jako bych tam nebyl).</span></div>
+<div class='flex gap-3 mb-4 items-start'><span class='shrink-0'>✅</span><span>„Máte u sebe doklady?“ (Mluvíte přímo na mě, jako s člověkem).</span></div>
+<blockquote> Osobně nenávidím, když se lékař baví s doprovodem místo se mnou. Doprovod třeba vůbec neví, co mě bolí!</blockquote>
+<h2>🧠 Jak to vlastně funguje v reálu</h2>
+<h2>Nevidomý není chaos. Je to systém:</h2>
+<div class='flex gap-3 mb-4 items-start'><span class='shrink-0'>🔹</span><span>Pohyb → Hůl, pes, GPS navigace.</span></div>
+<div class='flex gap-3 mb-4 items-start'><span class='shrink-0'>🔹</span><span>Nákupy → Aplikace v mobilu, asistence na místě.</span></div>
+<div class='flex gap-3 mb-4 items-start'><span class='shrink-0'>🔹</span><span>Technologie → Hlasové čtečky obrazovky.</span></div>
+<div class='flex gap-3 mb-4 items-start'><span class='shrink-0'>🔹</span><span>Zábava → Audioknihy a filmy s audiodeskripcí.</span></div>
+<p> "Není to 'nějak to zvládnu'. Je to 'vím přesně jak'."</p>
+<h2>🧩 Závěr: Buď normální (fakt stačí)</h2>
+<p> Nevidomí nejsou křehcí ani z jiné planety. Jsou to lidi, kteří jen fungují jinak. Stačí si zapamatovat:</p>
+<div class='flex gap-3 mb-4 items-start'><span class='shrink-0'>✅</span><span>Mluv normálně</span></div>
+<div class='flex gap-3 mb-4 items-start'><span class='shrink-0'>✅</span><span>Ptej se</span></div>
+<div class='flex gap-3 mb-4 items-start'><span class='shrink-0'>✅</span><span>Nesahej bez dovolení</span></div>
+<p> A jestli sis z toho vzal aspoň jednu věc, tak prosím: Neptej se příště „kolik vidíš prstů“ 😄</p>
+
+    </article>
+
+    <footer class="mt-16 pt-8 border-t border-slate-800">
+      <div class="bg-blue-600/10 border border-blue-500/20 rounded-2xl p-6 text-center">
+        <p class="text-blue-300 font-bold mb-2 text-sm uppercase tracking-widest">Líbilo se ti to?</p>
+        <p class="text-slate-400 text-sm mb-4 italic">Když potkáš nevidomého, nevnucuj mu okamžitě pomoc. Nejprve se ho zeptej, jestli ji potřebuje. Pamatuj jedno. Nucená pomoc není pomoc.</p>
+        <a href="../index.html" class="inline-block bg-blue-600 hover:bg-blue-500 text-white font-bold py-2 px-6 rounded-full text-sm transition-all">
+          Zpět na hlavní stránku
+        </a>
+      </div>
+    </footer>
+
+  </main>
+
+  <script>
+    // Skript pro progress bar
+    window.onscroll = function() {
+      let winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+      let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      let scrolled = (winScroll / height) * 100;
+      document.getElementById("progress-bar").style.width = scrolled + "%";
+    };
+  </script>
+
+</body>
+</html>

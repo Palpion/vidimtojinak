@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Co lide nechapou | Vidím to jinak</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    :root {
+      --bg-dark: #020617;
+      --accent-blue: #3b82f6;
+    }
+
+    body {
+      background-color: var(--bg-dark);
+      background-image: radial-gradient(at 50% 0%, rgba(30, 58, 138, 0.2) 0px, transparent 50%);
+      min-height: 100vh;
+    }
+
+    /* Progress bar nahoře */
+    #progress-bar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 3px;
+      background: linear-gradient(to right, var(--accent-blue), #60a5fa);
+      width: 0%;
+      z-index: 100;
+      transition: width 0.1s;
+    }
+
+    /* Typografie a odstavce */
+    .prose-custom p {
+      margin-bottom: 1.5rem;
+      line-height: 1.8;
+      color: #cbd5e1; /* slate-300 */
+    }
+
+    /* První odstavec - "perex" */
+    .prose-custom p:first-of-type {
+      font-size: 1.25rem;
+      font-weight: 500;
+      color: #f1f5f9; /* slate-100 */
+      line-height: 1.6;
+      border-left: 4px solid var(--accent-blue);
+      padding-left: 1.5rem;
+      margin-bottom: 2.5rem;
+    }
+
+    /* Nadpisy v článku */
+    .prose-custom h2, .prose-custom h3 {
+      color: #f1f5f9;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      margin-top: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    .prose-custom h2 { font-size: 1.875rem; }
+    .prose-custom h3 { font-size: 1.5rem; }
+
+    /* Zvýraznění (tučný text) */
+    .prose-custom strong {
+      color: #f8fafc;
+      font-weight: 700;
+    }
+
+    /* TL;DR Box (Shrnutí) */
+    .tldr-box {
+      background: rgba(30, 41, 59, 0.5);
+      border: 1px solid rgba(59, 130, 246, 0.3);
+      border-radius: 1rem;
+      padding: 1.5rem;
+      margin-bottom: 2.5rem;
+    }
+
+    /* Citace (ty nekorektní hlášky) */
+    blockquote {
+      font-style: italic;
+      font-size: 1.2rem;
+      border-left: 4px solid #ef4444; /* Červená pro důraz */
+      background: rgba(239, 68, 68, 0.05);
+      padding: 1.5rem;
+      margin: 2rem 0;
+      color: #fca5a5;
+    }
+
+    /* Odrážky */
+    .prose-custom ul {
+      margin-bottom: 1.5rem;
+      list-style-type: none;
+    }
+
+    .prose-custom li {
+      margin-bottom: 0.5rem;
+      padding-left: 1.5rem;
+      position: relative;
+    }
+  </style>
+</head>
+
+<body class="font-sans antialiased text-slate-100 text-lg">
+
+  <div id="progress-bar"></div>
+
+  <header class="w-full border-b border-slate-800/60 bg-slate-950/70 backdrop-blur sticky top-0 z-50">
+    <div class="max-w-4xl mx-auto px-4 py-3 flex items-center justify-between">
+      <a href="../index.html" class="group flex items-center gap-2 text-slate-400 hover:text-white transition-colors">
+        <span class="text-xl group-hover:-translate-x-1 transition-transform">←</span>
+        <span class="text-sm font-bold uppercase tracking-widest">Všechny články</span>
+      </a>
+      <span class="text-[10px] text-slate-500 uppercase tracking-[0.3em] font-black">Vidím to jinak</span>
+    </div>
+  </header>
+
+  <main class="max-w-3xl mx-auto px-4 pb-20 pt-12">
+
+    <header class="mb-12">
+      <h1 class="text-4xl sm:text-5xl font-black mb-4 leading-tight tracking-tighter">
+        Co lidé nechápou o nevidomých (a proč mě to občas dohání k šílenství)
+      </h1>
+      <div class="flex items-center gap-4 text-xs text-slate-500 uppercase tracking-widest font-bold">
+        <span>Publikováno: <time>19. 04. 2026</time></span>
+        <span class="w-1 h-1 bg-slate-700 rounded-full"></span>
+        <span>Čtení na 5 minut</span>
+      </div>
+    </header>
+
+    <div class="tldr-box">
+      <h4 class="text-blue-400 font-black text-xs uppercase tracking-[0.2em] mb-3">Shrnutí pro lidi v presu</h4>
+      <p class="text-slate-300 text-sm leading-relaxed italic">
+        Každodenní situace, které by nevymyslel ani scénárista špatné komedie. Proč nás vaše "pomoc" někdy vytáčí k nepříčetnosti a jak se chovat, abyste nebyli za idioty?
+      </p>
+    </div>
+
+    <article id="article-content" class="prose-custom max-w-none">
+      <p> Co lidé nechápou o nevidomých (a proč mě to občas dohání k šílenství)</p>
+<p> 👀 Každodenní situace, které by nevymyslel ani scénárista špatné komedie. Proč nás vaše "pomoc" někdy vytáčí k nepříčetnosti a jak se chovat, abyste nebyli za idioty?</p>
+<p> Lidé o nevidomých vědí málo. A co je horší – často si myslí, že vědí dost. Tady je pár věcí, které mě v běžném životě spolehlivě vytočí. A pokud si je zapamatujete, možná tím ušetříte nervy nejen mně, ale i dalším lidem se zrakovým handicapem.</p>
+<h3>1. Nevidomý ≠ mentálně mimo</h3>
+<p> To, že nevidím, neznamená, že potřebuju, abyste na mě mluvili jako na tříleté dítě.</p>
+<h2>Ano, i tohle se děje:</h2>
+<div class='flex gap-3 mb-4 items-start'><span class='shrink-0'>👉</span><span>Pomalá řeč</span></div>
+<div class='flex gap-3 mb-4 items-start'><span class='shrink-0'>👉</span><span>Přehnaná artikulace</span></div>
+<div class='flex gap-3 mb-4 items-start'><span class='shrink-0'>👉</span><span>Zvýšený hlas</span></div>
+<p> Ne. Není. To. Potřeba. Nevidím dobře. Ale myslím úplně normálně. Stejně jako většina nevidomých.</p>
+<h3>2. „Kolik vidíš prstů?“ 🤦‍♂️</h3>
+<p> Klasika. Někdo zjistí, že mám zbytky zraku… a najednou ze mě dělá testovací zařízení. Strká prsty před obličej a čeká výsledek.</p>
+<blockquote> "Proč? Moje vidění není vypínač ON/OFF!"</blockquote>
+<p> Je to spektrum: světlo, kontrast, prostředí. A hlavně: Nejsem experiment.</p>
+<h3>3. Vodicí pes není atrakce</h3>
+<p> Vodicí pes není roztomilá dekorace na ulici. Je to pracovní nástroj. Když ho rozptýlíte, riskujete, že jeho majitel skončí pod autem. To není přehánění. To je realita.</p>
+<h2>Takže:</h2>
+<div class='flex gap-3 mb-4 items-start'><span class='shrink-0'>❌</span><span>Nemlaskejte</span></div>
+<div class='flex gap-3 mb-4 items-start'><span class='shrink-0'>❌</span><span>Nehlaďte bez dovolení</span></div>
+<div class='flex gap-3 mb-4 items-start'><span class='shrink-0'>❌</span><span>Nekrmte (ani „jen piškotem“)</span></div>
+<blockquote> Vážně to není sranda. Nedělejte to ani v afektu, když toho nevidomého znáte a něčím vás naštval. Nechovejte se jako bezohlední hulváti!</blockquote>
+<p> Chcete si ho pohladit? Zeptejte se. A počítejte s tím, že odpověď může být ne. Ten člověk k tomu má své důvody.</p>
+<h3>4. Ne, nejsem Daredevil</h3>
+<blockquote> „To je super, že máš lepší ostatní smysly!“</blockquote>
+<p> Ne. Nemám. Nezačal jsem slyšet přes zdi ani cítit večeři o tři ulice dál. Co se změnilo? Používám víc to, co mám. Vidící člověk ignoruje zvuky, protože může. Já ne. Protože mi pomáhají přežít běžný den.</p>
+<p> "To není superschopnost. To je adaptace."</p>
+<h3>5. „Já tě nechci urazit, ale…“</h3>
+<p> Tahle věta většinou znamená, že přijde něco divného. Přitom řešení je jednoduché:</p>
+<div class='flex gap-3 mb-4 items-start'><span class='shrink-0'>👉</span><span>Normálně se zeptejte. Nevidomí nejsou křehké porcelánové figurky.</span></div>
+<div class='flex gap-3 mb-4 items-start'><span class='shrink-0'>👉</span><span>Nevíš, jak pomoct? Zeptej se.</span></div>
+<div class='flex gap-3 mb-4 items-start'><span class='shrink-0'>👉</span><span>Chceš doprovodit? Řekni to.</span></div>
+<div class='flex gap-3 mb-4 items-start'><span class='shrink-0'>👉</span><span>Nechytej mě hned za ruku jak kufr na letišti.</span></div>
+<p> A mimochodem – „rád tě vidím“ je úplně v pohodě. Používáme to taky.</p>
+<h3>Závěr: Stačí se chovat normálně</h3>
+<p> Fakt v tom není věda. Nejsme z jiné planety. Jen občas fungujeme jinak. Stačí si zapamatovat tři věci:</p>
+<div class='flex gap-3 mb-4 items-start'><span class='shrink-0'>✅</span><span>Mluv normálně</span></div>
+<div class='flex gap-3 mb-4 items-start'><span class='shrink-0'>✅</span><span>Ptej se</span></div>
+<div class='flex gap-3 mb-4 items-start'><span class='shrink-0'>✅</span><span>Nesahej bez dovolení (na mě, na hůl ani na psa)</span></div>
+<p> Dočetl jsi až sem? Super. Tak si to zapamatuj… a hlavně to pošli dál. Možná tím zachráníš jednoho nevidomého od legendární otázky: „Kolik vidíš prstů?“ 😄</p>
+
+    </article>
+
+    <footer class="mt-16 pt-8 border-t border-slate-800">
+      <div class="bg-blue-600/10 border border-blue-500/20 rounded-2xl p-6 text-center">
+        <p class="text-blue-300 font-bold mb-2 text-sm uppercase tracking-widest">Líbilo se ti to?</p>
+        <p class="text-slate-400 text-sm mb-4 italic">Zkus o tom přemýšlet, až příště potkáš někoho s bílou holí.</p>
+        <a href="../index.html" class="inline-block bg-blue-600 hover:bg-blue-500 text-white font-bold py-2 px-6 rounded-full text-sm transition-all">
+          Zpět na hlavní stránku
+        </a>
+      </div>
+    </footer>
+
+  </main>
+
+  <script>
+    // Skript pro progress bar
+    window.onscroll = function() {
+      let winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+      let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      let scrolled = (winScroll / height) * 100;
+      document.getElementById("progress-bar").style.width = scrolled + "%";
+    };
+  </script>
+
+</body>
+</html>
