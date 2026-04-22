@@ -19,7 +19,6 @@
       min-height: 100vh;
     }
 
-    /* Progress bar nahoře */
     #progress-bar {
       position: fixed;
       top: 0;
@@ -31,25 +30,22 @@
       transition: width 0.1s;
     }
 
-    /* Typografie a odstavce */
     .prose-custom p {
       margin-bottom: 1.5rem;
       line-height: 1.8;
-      color: #cbd5e1; /* slate-300 */
+      color: #cbd5e1;
     }
 
-    /* První odstavec - "perex" */
     .prose-custom p:first-of-type {
       font-size: 1.25rem;
       font-weight: 500;
-      color: #f1f5f9; /* slate-100 */
+      color: #f1f5f9;
       line-height: 1.6;
       border-left: 4px solid var(--accent-blue);
       padding-left: 1.5rem;
       margin-bottom: 2.5rem;
     }
 
-    /* Nadpisy v článku */
     .prose-custom h2, .prose-custom h3 {
       color: #f1f5f9;
       font-weight: 800;
@@ -61,13 +57,11 @@
     .prose-custom h2 { font-size: 1.875rem; }
     .prose-custom h3 { font-size: 1.5rem; }
 
-    /* Zvýraznění (tučný text) */
     .prose-custom strong {
       color: #f8fafc;
       font-weight: 700;
     }
 
-    /* TL;DR Box (Shrnutí) */
     .tldr-box {
       background: rgba(30, 41, 59, 0.5);
       border: 1px solid rgba(59, 130, 246, 0.3);
@@ -76,27 +70,14 @@
       margin-bottom: 2.5rem;
     }
 
-    /* Citace (ty nekorektní hlášky) */
     blockquote {
       font-style: italic;
       font-size: 1.2rem;
-      border-left: 4px solid #ef4444; /* Červená pro důraz */
+      border-left: 4px solid #ef4444;
       background: rgba(239, 68, 68, 0.05);
       padding: 1.5rem;
       margin: 2rem 0;
       color: #fca5a5;
-    }
-
-    /* Odrážky */
-    .prose-custom ul {
-      margin-bottom: 1.5rem;
-      list-style-type: none;
-    }
-
-    .prose-custom li {
-      margin-bottom: 0.5rem;
-      padding-left: 1.5rem;
-      position: relative;
     }
   </style>
 </head>
@@ -119,10 +100,10 @@
 
     <header class="mb-12">
       <h1 class="text-4xl sm:text-5xl font-black mb-4 leading-tight tracking-tighter">
-        Já bych to nedal. Věta, kterou shazujete sami sebe.
+        „Já bych to nedal.“ Věta, kterou shazujete sami sebe.
       </h1>
       <div class="flex items-center gap-4 text-xs text-slate-500 uppercase tracking-widest font-bold">
-        <span>Publikováno: <time>19. 04. 2026</time></span>
+        <span>Aktualizováno: <time>22. 04. 2026</time></span>
         <span class="w-1 h-1 bg-slate-700 rounded-full"></span>
         <span>Čtení na 5 minut</span>
       </div>
@@ -131,41 +112,52 @@
     <div class="tldr-box">
       <h4 class="text-blue-400 font-black text-xs uppercase tracking-[0.2em] mb-3">Shrnutí pro lidi v presu</h4>
       <p class="text-slate-300 text-sm leading-relaxed italic">
-        Myslíte si, že život ve tmě vyžaduje superschopnosti Marvelovského hrdiny? Omyl. Je to jen otázka adaptace. Kdybyste neměli jinou možnost, dali byste to taky a ještě s prstem v nose.
+        Myslíte si, že život ve tmě vyžaduje superschopnosti Marvelovského hrdiny? Omyl. Je to otázka adaptace. Kdybyste neměli jinou možnost, dali byste to taky a ještě s prstem v nose.
       </p>
     </div>
 
     <article id="article-content" class="prose-custom max-w-none">
-      <p> „Já bych to nedal.“ Věta, kterou shazujete sami sebe.</p>
-<p> 👀 Myslíte si, že život ve tmě vyžaduje superschopnosti Marvelovského hrdiny? Omyl. Je to jen otázka adaptace. Kdybyste neměli jinou možnost, dali byste to taky a ještě s prstem v nose.</p>
-<p> Jdete po ulici, bílá hůl si klepe svůj rytmus a najednou vás někdo zastaví. Hlas se mu třepe obdivem: „Ty jo, ty seš frajer. Já bych to fakt nedal, já bych se zbláznil.“</p>
-<p> "Většinou mám chuť odpovědět: Ale prosím tě... kdybys neměl jinou možnost, dal bys to taky. Člověk vydrží mnohem víc, než si ve svém pohodlí dokáže představit."</p>
-<h3>Pochvala, která tak trochu bolí</h3>
-<p> Věta „Já bych to nedal“ je sice myšlená jako poklona, ale shazujete tím sami sebe. Tady neběhají žádní superhrdinové. Jsme normální lidi. Celé tajemství není v nadpřirozených schopnostech, ale v adaptaci.</p>
-<p> Lidský mozek je neuvěřitelná mašina – když mu vypnete jeden kanál, prostě začne víc makat na těch ostatních. Místo očí zapneš sluch, hmat a intuici. Život jde dál, jen se prostě přepneš do jiného módu.</p>
-<h3>Slepota je ten „lehčí“ level</h3>
-<p> Teď asi spoustu lidí naštvu, ale stojím si za tím: Slepota nebo hluchota jsou jedny z těch „snadnějších“ handicapů. Proč? Protože se můžeme normálně hýbat.</p>
-<p> "Zkuste se podívat na vozíčkáře nebo lidi upoutané na lůžko. Ti to mají o dost tvrdší. Když mi někdo říká, jaký jsem hrdina, musím se v duchu smát. Jsou tu mnohem větší borci."</p>
-<h3>Jak se neztratit jako včela v zimě</h3>
-<p> Jasně, když o zrak přijdete uprostřed života, jste nejdřív zmatení jako lesní včela v lednu. Ale od toho jsou tu odborníci, co vás naučí chodit s holí a vrátí vás do sedla. Má to i své výhody:</p>
-<div class='flex gap-3 mb-4 items-start'><span class='shrink-0'>👉</span><span>Zatímco vy vidící musíte pořád svítit a platit za elektriku, my šetříme planetu i peněženku.</span></div>
-<div class='flex gap-3 mb-4 items-start'><span class='shrink-0'>👉</span><span>Jsme sice blind, ale totálně eko!</span></div>
-<h3>Trapas u řezníka: Pozor na jitrnice</h3>
-<p> Adaptace má i své stinné stránky, které končí solidním trapasem. Znám historku nevidomého, který ucítil u řezníka známou vůni, chytil osobu vedle sebe za zadek a povídá: „Miláčku, nekoupíš mi tu jitrnici?“</p>
-<blockquote> Dotyčná pravila s ledovým klidem: „Promiňte, já nejsem vaše žena a mám štěstí, že tu není můj přítel.“ Manželka se naštěstí ozvala od vedlejšího pultu: „Pojď sem, já už ti ji koupila!“</blockquote>
-<h2>🎯 Závěr: Už nás nelitujte</h2>
-<p> My to „dáváme“, protože chceme žít. Je to o technologiích, o cviku a o tom, že se prostě ráno vzbudíte a jdete dál.</p>
-<div class='flex gap-3 mb-4 items-start'><span class='shrink-0'>✅</span><span>Neponižujte se před námi.</span></div>
-<div class='flex gap-3 mb-4 items-start'><span class='shrink-0'>✅</span><span>Neříkejte, že byste to nedali.</span></div>
-<div class='flex gap-3 mb-4 items-start'><span class='shrink-0'>✅</span><span>Dali byste to. Protože museli.</span></div>
-<p> Příště, až mě potkáte, klidně řekněte, že jsem frajer – ale tím to končí. Berte nás jako lidi, kteří prostě jen fungují v jiném operačním systému.</p>
+      <p>Jdete po ulici, bílá hůl si klepe svůj rytmus a najednou vás někdo zastaví. Hlas se mu třepe obdivem: „Ty jo, ty seš frajer. Já bych to fakt nedal, já bych se zbláznil.“</p>
 
+      <blockquote>"Většinou mám chuť odpovědět: Ale prosím tě... kdybys neměl jinou možnost, dal bys to taky. Člověk vydrží mnohem víc, než si ve svém pohodlí dokáže představit."</blockquote>
+
+      <h3>Pochvala, která tak trochu bolí</h3>
+      <p>Věta „Já bych to nedal“ je sice myšlená jako poklona, ale shazujete tím sami sebe. Tady neběhají žádní superhrdinové. Celé tajemství není v nadpřirozených schopnostech, ale v adaptaci.</p>
+      
+      <p>Lidský mozek je mašina – když mu vypnete jeden kanál, začne víc makat na těch ostatních. Místo očí zapneš sluch, hmat a intuici. Život jde dál, jen se přepneš do jiného módu.</p>
+
+      <h2>🩸 Prožitek: Nový operační systém</h2>
+      <p>Představte si, že celý život používáte Windows a najednou vám někdo ze dne na den nainstaluje Linux. Prvních pár dní budete tápat, vztekat se a nic nenajdete. Ale za měsíc už budete vědět, kde co je, a za rok vám to přijde úplně normální.</p>
+
+      <blockquote>"Handicap není tragédie, je to jen přechod na jiný operační systém. Není horší, je prostě jiný. A vy byste se ho naučili ovládat taky, kdyby vám nic jiného nezbylo."</blockquote>
+
+      <h2>🤝 Scénář A vs. Scénář B (Falešný hrdina)</h2>
+
+      <div class='flex gap-3 mb-4 items-start'><span class='shrink-0'>❌</span><span><strong>Scénář B (Lítost):</strong> „Chudáčku, já tě tak obdivuju, já bych radši umřel, než abych neviděl.“ Gratuluju, právě jste mi řekli, že můj život má podle vás nulovou hodnotu.</span></div>
+
+      <div class='flex gap-3 mb-4 items-start'><span class='shrink-0'>✅</span><span><strong>Scénář A (Respekt):</strong> „Hele, klobouk dolů, jak se s tím pereš. Jdeš na pivo?“ To je všechno. Berete mě jako parťáka, ne jako exponát v muzeu utrpení.</span></div>
+
+      <h3>Slepota je ten „lehčí“ level</h3>
+      <p>Stojím si za tím: Slepota nebo hluchota jsou ty „snadnější“ handicapy, protože se můžeme normálně hýbat. Zkuste se podívat na vozíčkáře nebo lidi upoutané na lůžko. Ti to mají o dost tvrdší.</p>
+
+      <h3>Trapas u řezníka</h3>
+      <p>Adaptace má i své stinné stránky. Znám historku nevidomého, který ucítil u řezníka známou vůni, chytil osobu vedle sebe za zadek a povídá: „Miláčku, nekoupíš mi tu jitrnici?“</p>
+      <blockquote>Dotyčná pravila s ledovým klidem: „Promiňte, já nejsem vaše žena.“ Manželka se naštěstí ozvala od vedlejšího pultu: „Pojď sem, já už ti ji koupila!“</blockquote>
+
+      <h2>🎯 Závěr: Už nás nelitujte</h2>
+      <p>My to „dáváme“, protože chceme žít. Je to o technologiích, o cviku a o tom, že se prostě ráno vzbudíte a jdete dál.</p>
+
+      <div class='flex gap-3 mb-4 items-start'><span class='shrink-0'>✅</span><span><strong>Neponižujte se</strong> před námi svým „já bych to nedal“.</span></div>
+      <div class='flex gap-3 mb-4 items-start'><span class='shrink-0'>✅</span><span><strong>Dali byste to.</strong> Protože byste museli.</span></div>
+      <div class='flex gap-3 mb-4 items-start'><span class='shrink-0'>✅</span><span><strong>Berte nás jako lidi</strong> v jiném operačním systému.</span></div>
+
+      <p>Příště mi klidně řekněte, že jsem frajer – ale pak už se mě prostě jen zeptejte, co si dám k pití. 😄</p>
     </article>
 
     <footer class="mt-16 pt-8 border-t border-slate-800">
       <div class="bg-blue-600/10 border border-blue-500/20 rounded-2xl p-6 text-center">
         <p class="text-blue-300 font-bold mb-2 text-sm uppercase tracking-widest">Líbilo se ti to?</p>
-        <p class="text-slate-400 text-sm mb-4 italic">Nepodceňujte se. Není to zdravé.</p>
+        <p class="text-slate-400 text-sm mb-4 italic">Věřte svému mozku. Dokáže víc, než si myslíte.</p>
         <a href="../index.html" class="inline-block bg-blue-600 hover:bg-blue-500 text-white font-bold py-2 px-6 rounded-full text-sm transition-all">
           Zpět na hlavní stránku
         </a>
@@ -175,7 +167,6 @@
   </main>
 
   <script>
-    // Skript pro progress bar
     window.onscroll = function() {
       let winScroll = document.body.scrollTop || document.documentElement.scrollTop;
       let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
