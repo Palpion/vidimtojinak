@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Komunikace | Vidím to jinak</title>
+
+  <meta name="description" content="Dialog vyžaduje dva lidi, kteří se slyší. Jenže realita je často monologický proud, který vás spláchne. Tady je návod, jak v tom chaosu nepřijít o rozum a energii.">
+  <meta name="keywords" content="edukace, nevidomí, handicap, realita bez filtru, Jan Šimek, osvěta">
+  <meta name="author" content="Jan Šimek">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://vidimtojinak.cz/articles/021._komunikace.html">
+
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Komunikace | Vidím to jinak">
+  <meta property="og:description" content="Dialog vyžaduje dva lidi, kteří se slyší. Jenže realita je často monologický proud, který vás spláchne. Tady je návod, jak v tom chaosu nepřijít o rozum a energii.">
+  <meta property="og:url" content="https://vidimtojinak.cz/articles/021._komunikace.html">
+  <meta property="og:image" content="https://vidimtojinak.cz/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-FTQEHCE1DR"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-FTQEHCE1DR');
+  </script>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    :root {
+      --bg-dark: #020617;
+      --accent-blue: #3b82f6;
+    }
+    body {
+      background-color: var(--bg-dark);
+      background-image: radial-gradient(at 50% 0%, rgba(30, 58, 138, 0.2) 0px, transparent 50%);
+      min-height: 100vh;
+    }
+    #progress-bar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 3px;
+      background: linear-gradient(to right, var(--accent-blue), #60a5fa);
+      width: 0%;
+      z-index: 100;
+      transition: width 0.1s;
+    }
+    .prose-custom p { margin-bottom: 1.5rem; line-height: 1.8; color: #cbd5e1; }
+    .prose-custom p:first-of-type {
+      font-size: 1.25rem; font-weight: 500; color: #f1f5f9;
+      line-height: 1.6; border-left: 4px solid var(--accent-blue);
+      padding-left: 1.5rem; margin-bottom: 2.5rem;
+    }
+    .prose-custom h2, .prose-custom h3 {
+      color: #f1f5f9; font-weight: 800; letter-spacing: -0.02em;
+      margin-top: 3rem; margin-bottom: 1rem;
+    }
+    .prose-custom h2 { font-size: 1.875rem; }
+    .prose-custom h3 { font-size: 1.5rem; }
+    .prose-custom strong { color: #f8fafc; font-weight: 700; }
+    .tldr-box {
+      background: rgba(30, 41, 59, 0.5); border: 1px solid rgba(59, 130, 246, 0.3);
+      border-radius: 1rem; padding: 1.5rem; margin-bottom: 2.5rem;
+    }
+    blockquote {
+      font-style: italic; font-size: 1.2rem; border-left: 4px solid #ef4444;
+      background: rgba(239, 68, 68, 0.05); padding: 1.5rem; margin: 2rem 0; color: #fca5a5;
+    }
+    .prose-custom ul { margin-bottom: 1.5rem; list-style-type: none; }
+    .prose-custom li { margin-bottom: 0.5rem; padding-left: 1.5rem; position: relative; }
+
+.comm-animation-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  margin: 2.5rem 0;
+}
+
+@media (min-width: 768px) {
+  .comm-animation-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.comm-animation-card {
+  background: rgba(15, 23, 42, 0.8);
+  border: 1px solid rgba(59, 130, 246, 0.25);
+  border-radius: 1rem;
+  padding: 1rem;
+  overflow: hidden;
+}
+
+.comm-animation-card h3 {
+  margin: 0 0 1rem 0;
+  font-size: 1rem;
+  color: #bfdbfe;
+  text-align: center;
+}
+
+.animation-scene {
+  position: relative;
+  height: 220px;
+  background: radial-gradient(circle at top, rgba(59,130,246,0.15), rgba(2,6,23,0.9));
+  border-radius: 0.75rem;
+  overflow: hidden;
+}
+
+.person {
+  position: absolute;
+  bottom: 35px;
+  width: 42px;
+  height: 80px;
+}
+
+.person::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 10px;
+  width: 24px;
+  height: 24px;
+  background: #e5e7eb;
+  border-radius: 50%;
+}
+
+.person::after {
+  content: "";
+  position: absolute;
+  top: 28px;
+  left: 16px;
+  width: 12px;
+  height: 42px;
+  background: #60a5fa;
+  border-radius: 10px;
+}
+
+.person-left { left: 35px; }
+.person-right { right: 35px; transform: scaleX(-1); }
+
+.paddle {
+  position: absolute;
+  top: 42px;
+  left: 38px;
+  width: 10px;
+  height: 38px;
+  background: #ef4444;
+  border-radius: 999px;
+  transform: rotate(-25deg);
+}
+
+.ball {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  background: #facc15;
+  border-radius: 50%;
+  box-shadow: 0 0 12px rgba(250,204,21,0.8);
+}
+
+.pingpong-ball {
+  top: 95px;
+  left: 60px;
+  animation: pingpong 1.4s ease-in-out infinite alternate;
+}
+
+.table {
+  position: absolute;
+  bottom: 28px;
+  left: 50%;
+  width: 180px;
+  height: 12px;
+  background: #334155;
+  transform: translateX(-50%);
+  border-radius: 999px;
+}
+
+.table::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 12px;
+  width: 2px;
+  height: 34px;
+  background: #94a3b8;
+}
+
+@keyframes pingpong {
+  0% { transform: translate(0, 0); }
+  50% { transform: translate(90px, -35px); }
+  100% { transform: translate(180px, 0); }
+}
+
+.wall {
+  position: absolute;
+  right: 25px;
+  top: 35px;
+  width: 22px;
+  height: 145px;
+  background: #64748b;
+  border-radius: 8px;
+  box-shadow: inset 4px 0 0 rgba(255,255,255,0.12);
+}
+
+.wall-ball-main {
+  top: 105px;
+  left: 70px;
+  animation: wallShot 2.4s ease-in-out infinite;
+}
+
+@keyframes wallShot {
+  0% { transform: translate(0, 0); opacity: 1; }
+  35% { transform: translate(135px, -25px); opacity: 1; }
+  55% { transform: translate(70px, 20px); opacity: 1; }
+  100% { transform: translate(15px, 55px); opacity: 0; }
+}
+
+.ball-rain {
+  position: absolute;
+  right: 50px;
+  top: 40px;
+  width: 12px;
+  height: 12px;
+  background: #facc15;
+  border-radius: 50%;
+  opacity: 0;
+  animation: ballRain 2.4s ease-in-out infinite;
+}
+
+.ball-rain:nth-of-type(2) { animation-delay: 0.1s; right: 80px; }
+.ball-rain:nth-of-type(3) { animation-delay: 0.2s; right: 105px; }
+.ball-rain:nth-of-type(4) { animation-delay: 0.3s; right: 65px; }
+.ball-rain:nth-of-type(5) { animation-delay: 0.4s; right: 120px; }
+
+@keyframes ballRain {
+  0%, 45% { opacity: 0; transform: translateY(-30px); }
+  60% { opacity: 1; }
+  100% { opacity: 0; transform: translateY(150px); }
+}
+  </style>
+</head>
+
+<body class="font-sans antialiased text-slate-100 text-lg">
+
+  <div id="progress-bar"></div>
+
+  <header class="w-full border-b border-slate-800/60 bg-slate-950/70 backdrop-blur sticky top-0 z-50">
+    <div class="max-w-4xl mx-auto px-4 py-3 flex items-center justify-between">
+      <a href="../index.html" class="group flex items-center gap-2 text-slate-400 hover:text-white transition-colors">
+        <span class="text-xl group-hover:-translate-x-1 transition-transform">←</span>
+        <span class="text-sm font-bold uppercase tracking-widest">Všechny články</span>
+      </a>
+      <span class="text-[10px] text-slate-500 uppercase tracking-[0.3em] font-black">Vidím to jinak</span>
+    </div>
+  </header>
+
+  <main class="max-w-3xl mx-auto px-4 pb-20 pt-12">
+    <header class="mb-12">
+      <h1 class="text-4xl sm:text-5xl font-black mb-4 leading-tight tracking-tighter">
+        Komunikace
+      </h1>
+      <div class="flex items-center gap-4 text-xs text-slate-500 uppercase tracking-widest font-bold">
+        <span>Publikováno: <time>12. 05. 2026</time></span>
+        <span class="w-1 h-1 bg-slate-700 rounded-full"></span>
+        <span>Čtení na 5 minut</span>
+      </div>
+    </header>
+
+    <div class="tldr-box">
+      <h4 class="text-blue-400 font-black text-xs uppercase tracking-[0.2em] mb-3">Shrnutí pro lidi v presu</h4>
+      <p class="text-slate-300 text-sm leading-relaxed italic">
+        Dialog vyžaduje dva lidi, kteří se slyší. Jenže realita je často monologický proud, který vás spláchne. Tady je návod, jak v tom chaosu nepřijít o rozum a energii.
+      </p>
+    </div>
+
+    <article id="article-content" class="prose-custom max-w-none">
+
+<p> Téměř denně se mi stává, že mě někdo nenechá domluvit. Mnoho lidí vám bude tvrdit, že je to normální. Není. Je to jen lenost vnímat kohokoliv jiného než sebe. Když se vám to děje několikrát za hodinu, přestává to být smůla a stává se z toho diagnóza společnosti. V Mladé Boleslavi je to momentálně takový komunikační skanzen.</p>
+<p> > Ne každý, kdo mluví, je připravený na dialog. Pro spoustu lidí nejste partner v hovoru, ale jen další zeď, o kterou si můžou pinkat svůj vlastní monolog.</p>
+<h2>Ping-pong vs. tenis o zeď</h2>
+
+<div class="comm-animation-grid" aria-label="Ilustrace rozdílu mezi dialogem a monologem">
+  
+  <div class="comm-animation-card">
+    <h3>Dialog: ping-pong</h3>
+<div class="animation-scene" role="img" aria-label="Animace: Dva hráči si plynule přihrávají míček tam a zpět. Symbol funkčního dialogu.">
+•
+      <div class="table"></div>
+      <div class="person person-left">
+        <div class="paddle"></div>
+      </div>
+      <div class="person person-right">
+        <div class="paddle"></div>
+      </div>
+      <div class="ball pingpong-ball"></div>
+    </div>
+  </div>
+
+  <div class="comm-animation-card">
+    <h3>Monolog: tenis o zeď</h3>
+<div class="animation-scene" role="img" aria-label="Animace: Hráč odpálí míček proti zdi, ten se chaoticky odrazí a ze zdi se vyvalí záplava dalších míčků, které hráče zasypou. Symbol monologu.">
+      <div class="person person-left">
+        <div class="paddle"></div>
+      </div>
+      <div class="wall"></div>
+      <div class="ball wall-ball-main"></div>
+      <div class="ball-rain"></div>
+      <div class="ball-rain"></div>
+      <div class="ball-rain"></div>
+      <div class="ball-rain"></div>
+      <div class="ball-rain"></div>
+    </div>
+  </div>
+
+</div>
+
+<p> Jsem od přírody dialogista. Mám rád, když komunikace funguje jako stolní tenis – míček lítá z pálky na pálku, reagujeme na sebe, vnímáme směr hry. Jenže monologista hraje tenis o zeď. Odpálíte myšlenku, ta se dotkne jeho egocentrismu a odletí někam do pryč. A v tu ránu na vás ze zdi začne padat hromada jiných míčků, které vás úplně zasypou, aniž by se zeď zajímala, jestli ještě vůbec držíte pálku.</p>
+<h3>Únos na přechodu</h3>
+<p> Představte si tuhle situaci: Jdu po ulici, hledám přechod. Už ho mám, ale v tom mě někdo bez ptaní čapne za paži a začne mě vléct na druhou stranu. Snažím se vyvléknout, vysvětluju, že to zvládnu sám. Jenže ten člověk neustále něco mele. I když zvýším hlas, neposlouchá. Dotáhne mě na druhou stranu a až tam mě vítězoslavně pustí. Zkouším mu to vysvětlit znovu, ale on už je ve svém dalším monologu. Jediné, co funguje, je zařvat: "DOST!" Pak se lekne, ztratí nit a na vteřinu zmlkne. To je moje jediná šance na krátký dialog.</p>
+<h2>Telefonní teror a "masážní" monology</h2>
+<p> Vrchol sobeckosti zažívám v telefonu. Volá klientka: "Dobrý den, prosím vás, děláte masáže?" "Ano, dělám..." "To je dobře, mě strašně bolí za krkem, už týdny, byla jsem u doktora, ten mi dal prášky, ale já jim nevěřím, a víte v úterý jdu s kámoškou nakupovat a pak na oběd, byla jsem v té nové restauraci..." Snažím se tam vklínit otázku na čas, ale monologista jede dál přes moji polohu, optiku vedle a brýle, co si tam koupil před pěti lety. Hergot, co je s těmi lidmi špatně? Tohle není respekt, to je čistý despekt k času a prostoru toho druhého.</p>
+<h2>PROVOZNÍ REŽIM PRO MONOLOGISTY (Můj manuál)</h2>
+<p> Abych se z toho nezbláznil, vytvořil jsem si berličku. Tento seznam není o tom učit monologisty slušnosti – to je marný boj. Je o tom **chránit svůj vnitřní prostor**.</p>
+<h3>1. Tihle lidé nejsou dialog. Jsou zvuková kulisa.</h3>
+<p> Jakmile od monologisty čekám skutečný rozhovor, vyčerpám se. Jakmile ho přepnu do režimu "hluk ulice", zůstanu v klidu. Nemusím být účastník každého proudu slov, který se na mě valí.</p>
+<h3>2. Komunikační minimum (CMD)</h3>
+<p> S monologisty komunikuji co nejméně a co nejjasněji. Žádné vysvětlování, žádné obhajování. Moje funkční věty: 
+<ul class="list-disc ml-6 mb-4">
+  <li>„Teď pracuji.“</li>
+  <li>„Odpověď je ne.“</li>
+  <li>„Musím jít.“</li>
+</ul>
+Bez omluv. Bez dalšího prostoru pro jejich asociace.</p>
+<h3>3. Nevstupuju do proudu – ukončuju ho</h3>
+<p> U monologisty pauza na nadechnutí nepřijde. Nečekám na ni. Používám oznamovací věty jako „Končím“ nebo „Teď ne“ klidně i uprostřed jejich řeči. Je to sebeochrana, ne nezdvořilost.</p>
+<h2>Závěr</h2>
+<p> Mým úkolem není naučit svět respektu. Mým úkolem je chránit svoji energii, abych ji mohl dát lidem, kteří o dialog stojí. Pokud mě někdo verbálně válcuje, zavírám se – bez viny a bez špatného svědomí. Respekt začíná tam, kde končí monolog.</p>
+
+    </article>
+
+<!-- SEKCE KOMENTÁŘŮ -->
+<section class="max-w-3xl mx-auto px-4 py-10 border-t border-slate-800 mt-20">
+  <h2 class="text-2xl font-bold mb-8 text-blue-500">Diskuze k článku</h2>
+  
+  <div id="cusdis_thread"
+    data-host="https://cusdis.com"
+    data-app-id="b4bc4c08-f244-46e9-9aba-d36fc319dbba"
+    data-page-id="021._komunikace.html"
+    data-page-url="https://vidimtojinak.cz/articles/021._komunikace.html"
+    data-page-title="Komunikace"
+    data-theme="dark"
+  ></div>
+
+  <script async defer src="https://cusdis.com/js/cusdis.es.js"></script>
+</section>
+
+    <footer class="mt-16 pt-8 border-t border-slate-800">
+      <div class="bg-blue-600/10 border border-blue-500/20 rounded-2xl p-6 text-center">
+        <p class="text-blue-300 font-bold mb-2 text-sm uppercase tracking-widest">Děkuji za pozornost.</p>
+        <p class="text-slate-400 text-sm mb-4 italic">Svět nevidomých není černobílý. Pokud vám článek přišel fajn, sdílejte ho – pomůžete mi šířit osvětu, která nebolí.</p>
+        <a href="../index.html" class="inline-block bg-blue-600 hover:bg-blue-500 text-white font-bold py-2 px-6 rounded-full text-sm transition-all">
+          Zpět na hlavní stránku
+        </a>
+      </div>
+    </footer>
+  </main>
+
+  <div id="cookie-banner" class="fixed bottom-4 left-4 right-4 md:left-auto md:max-w-sm bg-slate-900 border border-slate-800 p-6 rounded-2xl shadow-2xl z-[100] hidden">
+    <div class="flex items-start gap-4">
+      <div class="text-2xl">🍪</div>
+      <div>
+        <h4 class="text-white font-bold mb-1 text-sm uppercase tracking-wider">Bereme si sušenky</h4>
+        <p class="text-slate-400 text-xs leading-relaxed mb-4">
+          Používáme jen základní cookies, abychom věděli, že sem vůbec někdo chodí. Žádný šmírování.
+        </p>
+        <button onclick="acceptCookies()" class="bg-blue-600 hover:bg-blue-500 text-white text-[10px] font-bold uppercase tracking-widest py-2 px-4 rounded-full transition-all">
+          V pořádku
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function acceptCookies() {
+      localStorage.setItem('cookiesAccepted', 'true');
+      document.getElementById('cookie-banner').classList.add('hidden');
+    }
+    window.onload = function() {
+      if (!localStorage.getItem('cookiesAccepted')) {
+        document.getElementById('cookie-banner').classList.remove('hidden');
+      }
+    };
+    window.onscroll = function() {
+      let winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+      let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      let scrolled = (winScroll / height) * 100;
+      document.getElementById("progress-bar").style.width = scrolled + "%";
+    };
+  </script>
+
+<script>
+  window.CUSDIS_LOCALE = {
+    "powered_by": "Běží na Cusdis",
+    "post_comment": "Odeslat komentář",
+    "placeholder": "Napište svůj komentář...",
+    "email": "E-mail (pro upozornění)",
+    "nickname": "Vaše jméno nebo přezdívka",
+    "reply_to": "Odpovědět uživateli",
+    "cast_vote": "Hlasovat",
+    "submit": "Publikovat",
+    "loading": "Načítání..."
+  }
+</script>
+
+</body>
+</html>
